@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>crud project</title>
+</head>
+<body>
+    
+<div class="container py-4 w-75 mx-auto">
+    <label for="productName">product name :</label>
+    <input type="text" class="form-control mb-2" id="productName">
+    <label for="productPrice">product price :</label>
+    <input type="text" class="form-control mb-2" id="productPrice">
+    <label for="productCategory">product category :</label>
+    <input type="text" class="form-control mb-2" id="productCategory">
+    <label for="productDesc">product description :</label>
+    <textarea type="text" class="form-control mb-2" id="productDesc"></textarea>
+    <button id="myBtn" class="btn btn-info" onclick="addProduct()">add product</button>
+    <button class="btn btn-info" onclick="clearForm()">reset</button>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="w-75 mx-auto">
+            <input type="text" placeholder="search by name" class="form-control my-3" id="searchInp">
+        <table class="table table-striped mx-auto text-center">
+            <thead>
+                <th>Product name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </thead>
+            <tbody id="list">
+                
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
